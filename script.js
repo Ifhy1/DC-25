@@ -18,12 +18,12 @@ const balloons = [
   {
       color: '#ff6b9d',
       emoji: '💓',
-      message: 'May you always find home in each other and be the kind of love story that never ends'
+      message: 'May you always find home in each other <br and be the kind of love story that never ends'
   },
   {
       color: '#ffc0cb',
       emoji: '💝',
-      message: 'Cheers to love, happiness, and forever'
+      message: 'To love, happiness, and forever'
   }
 ];
 
