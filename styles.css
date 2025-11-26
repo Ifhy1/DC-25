@@ -241,7 +241,7 @@ body {
   }
 }
 
-/* Final Message */
+/* FINAL MESSAGE FIXES — ADDED */
 .final-message {
   position: absolute;
   top: 50%;
@@ -249,7 +249,9 @@ body {
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.95);
   color: #333;
-  padding: 40px 60px;
+  width: 80vw;
+  max-width: 500px;
+  padding: 25px 30px;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -257,6 +259,7 @@ body {
   pointer-events: none;
   transition: opacity 1s ease;
   z-index: 100;
+  overflow-y: auto;
 }
 
 .final-message.show {
@@ -273,6 +276,21 @@ body {
   font-size: 1.3em;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+/* Mobile Fix */
+@media (max-width: 480px) {
+  .final-message {
+    width: 85vw;
+    padding: 20px 25px;
+  }
+  .final-message h2 {
+    font-size: 1.8em;
+  }
+  .final-message p {
+    font-size: 1.05em;
+    line-height: 1.5;
+  }
 }
 
 /* Responsive */
